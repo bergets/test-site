@@ -3,6 +3,11 @@ layout: default
 ---
 
 <div class="home">
+
+  {%- if page.alert -%}
+    <div class="alert-message">{{ page.alert }}</div>
+  {%- endif -%}
+
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -14,5 +19,6 @@ layout: default
 </div>
 
 <div class="more">
-  Can’t find a answer to your problem? Contact us with alpha.apptest@aditro.com
+  Can’t find a answer to your problem? <br>
+  <a href="mailto:alpha.apptest@aditro.com"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mail' | relative_url }}"></use></svg>Contact us</href>
 </div>

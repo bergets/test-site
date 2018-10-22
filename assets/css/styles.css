@@ -309,7 +309,17 @@ html {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #415464; }
+  color: #415464;
+  line-height: 1.5;
+  font-weight: 500; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin: 0 0 0.5rem 0;
+  font-family: Poppins, sans-serif; }
+
+h1 {
+  font-size: 2rem; }
 
 .page-content {
   max-width: 800px;
@@ -458,6 +468,13 @@ html {
   .highlight .il {
     color: #099; }
 
+.alert-message {
+  padding: 1rem;
+  border-bottom: 1px solid #D95B5F;
+  background-color: #FFEDEB; }
+  .alert-message h2 {
+    font-size: 1rem; }
+
 .page-heading {
   text-align: center;
   background-color: #fff;
@@ -497,8 +514,18 @@ html {
 
 a {
   color: #4791AB; }
+  a .svg-icon {
+    fill: #4791AB; }
 
 .more {
-  margin: 2.5rem 0 0 0;
+  margin: 3.5rem 0 0 0;
   padding: 1rem;
-  background-color: #fff; }
+  background-color: #fff;
+  text-align: center; }
+  .more a {
+    text-decoration: none; }
+  .more .svg-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+    margin-bottom: -.1rem; }
