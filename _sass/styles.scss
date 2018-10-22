@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     8px !default;
+
+$text-color:       #415464 !default;
+$background-color: #F3F1ED !default;
+$brand-color:      #2a7ae2 !default;
+$divider-color:    #E6E4E1;
+
+
+// Width of the content area
+$content-width:    800px !default;
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials.
+@import
+  "styling/normalize",
+  "styling/base",
+  "styling/layout",
+  "styling/syntax-highlighting"
+;
+
+.page-heading{
+ text-align: center;
+ background-color: #fff;
+ margin: 0;
+ padding-top: 2rem;
+ padding-bottom: 1.5rem;
+}
+
+.section-header{
+  margin: 0;
+  font-size: 14px;
+  padding: 2.5rem 1rem 0.5rem 1rem;
+}
+
+.nav-link{
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  a{
+    text-decoration: none;
+    color: $text-color;
+    padding: 1rem;
+    display: block;
+    border-bottom: 1px solid $divider-color;
+  }
+}
+
+.post-title{
+  padding: 2rem 1rem 1.5rem 1rem;
+  margin: 0;
+  background-color: #fff;
+}
+
+.post-content{
+  padding: 0.5rem 1rem 1.5rem 1rem;
+  background-color: #fff;
+}
+
+.nav-list{
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+a{
+  color: #4791AB;
+}
+
+.more{
+  margin: 2.5rem 0 0 0;
+  padding: 1rem;
+  background-color: #fff;
+}
