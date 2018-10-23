@@ -115,6 +115,16 @@ $content-width:    800px !default;
 }
 
 
+.ui-list{
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style-type: none;
+  }
+}
+
 a{
   color: #4791AB;
   .svg-icon{
