@@ -43,6 +43,10 @@ $content-width:    800px !default;
   "styling/syntax-highlighting"
 ;
 
+.container{
+  padding: 1rem;
+}
+
 .alert-message{
   padding: 1rem;
   border-bottom: 1px solid $negative;
