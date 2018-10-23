@@ -321,6 +321,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2rem; }
 
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 1.125rem; }
+
 .page-content {
   max-width: 800px;
   margin: 0 auto;
@@ -468,6 +477,9 @@ h1 {
   .highlight .il {
     color: #099; }
 
+.container {
+  padding: 1rem; }
+
 .alert-message {
   padding: 1rem;
   border-bottom: 1px solid #D95B5F;
@@ -532,6 +544,11 @@ h1 {
   padding: 0;
   -webkit-animation: fadein 0.5s;
           animation: fadein 0.5s; }
+
+.ui-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
 
 a {
   color: #4791AB; }
